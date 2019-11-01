@@ -5,7 +5,7 @@ import compose from 'lodash/fp/compose';
 function App(props) {
   return (
     <h1>
-      times should be 2: <span style={{ color: 'red' }}>{props.debug}</span>
+      should be 2: <span style={{ color: 'red' }}>{props.debug}</span>
     </h1>
   );
 }
