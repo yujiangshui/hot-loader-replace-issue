@@ -2,7 +2,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'none',
-  entry: ['react-hot-loader/patch', './App.js'],
+  entry: './App.js',
   output: {
     path: __dirname,
     filename: 'bundle.js'
@@ -17,14 +17,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loaders: ['babel-loader']
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader'
-          }
-        ]
       }
     ]
   },
